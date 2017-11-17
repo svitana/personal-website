@@ -1,0 +1,63 @@
+body {
+    margin: auto;
+    max-width: 900px;
+    font-family: verdana;
+}
+
+header {
+    height: 80px;
+    background-color: black;
+    color: white;
+}
+
+#title {
+    font-size: 230%;
+    
+    padding-left: 10px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: justify;
+  
+}
+
+h2 {
+  text-align: center;
+  grid-column: 1/3;
+}
+
+.photo {
+    display: block;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 450px;
+}
+
+.inHead:link, .inhead:visited {
+    background-color: #919191;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.inHead:hover, .inHead:active {
+    background-color: red;
+}
+
+#menu {
+    max-width: 500px;
+    float: right;
+}
+
+#contact {
+    margin: auto;
+}
+
+.textInBlocks {
+    padding: 10%;
+    margin: auto;
+}

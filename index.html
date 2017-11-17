@@ -10,50 +10,71 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="css/index.css">
     <meta name="theme-color" content="#ffffff">
     <title>Svitlana Levytska</title>
 </head>
 
 <body>
     <header>
-        <h1>Svitlana Levytska</h1>
-        <a href="index.html">Home</a> <a>Biography</a> <a>Blog</a> <a>Photo</a>
+        <span id="title">Svitlana Levytska</span>
+        <nav id="menu">
+            <a href="index.html" class="inHead">Home</a>
+            <a href="blog.html" class="inHead">Blog</a>
+            <a href="photo.html" class="inHead">Photo</a>
+            <a href="contact.html" class="inHead">Contact</a>
+        </nav>
     </header>
-    
-    <nav>
-        <p>Let me introduce myself. My name is Svitlana. I study at the IT Academy to work in the field of Web Development.   I started to be interested in programming since school years.  </p>
-        <img src="my-photo-1.jpg" alt="svitlana levytska">
-    </nav>
-    <nav>
-        <img src="my-photo-2.jpg" alt="near the university">
-        <p>After school I entered the National Aviation University on the specialty "Computer Science, Systems Management". And, having studied there for 2 years, I understood the exact direction of the specialty, which I want to do.  </p>
-    </nav>
-    <nav>
-        <h1>Contact me</h1>
-        <a href="https://www.facebook.com/profile.php?id=100008305955558" target="_blank"><img src="facebook.jpg" alt="faceook" width="70"></a>
-        <a href="https://www.instagram.com/levytskas/" target="_blank"><img src="instagram.jpg" alt="instagram" width="70"></a>
-        <a href="https://plus.google.com/u/0/110614591500502380050" target="_blank"><img src="google-plus.jpg" width="70"></a>
-        <img src="my-photo-3.jpg">
-    </nav>
-    <nav>
-        <img src="my-photo-4.jpg">
-        <h3>Or write me a leter right now:</h3>
-        <form method="post" action="https://formspree.io/svitana.den@gmail.com">
-            <label>Your name:
-                <input type="text" name="client-name">
+
+    <section>
+        <div class="textInBlocks">
+            <h2>A few words about myself: </h2>
+            <p>Let me introduce myself. My name is Svitlana. I study at the IT Academy to work in the field of Web Development. I started to be interested in programming since school years.</p>
+        </div>
+        <img class="photo" src="svitlana.jpg" alt="svitlana levytska">
+    </section>
+
+    <section>
+        <img class="photo" src="university.jpg" alt="near the university">
+        <div class="textInBlocks">
+            <h2>Skill</h2>
+            <p>After school I entered the National Aviation University on the specialty "Computer Science, Systems Management". And, having studied there for 2 years, I understood the exact direction of the specialty, which I want to do. </p>
+        </div>
+    </section>
+    <section>
+        <div id="contact"  class="textInBlocks">
+            <h2>Contact me:</h2>
+            <a href="https://www.facebook.com/profile.php?id=100008305955558" target="_blank"><img src="facebook.jpg" alt="facebook icon" width="70"></a>
+            <a href="https://www.instagram.com/levytskas/" target="_blank"><img src="instagram.jpg" alt="instagram icon" width="70"></a>
+            <a href="https://plus.google.com/u/0/110614591500502380050" target="_blank"><img src="google-plus.jpg" alt="google plus icon" width="70"></a>
+        </div>
+        <img class="photo" src="spring.jpg" alt="spring">
+    </section>
+    <section>
+        <img class="photo" src="svitlana-near-the-wall.jpg" alt="photo of svitlana">
+        <div class="textInBlocks">
+            <h2>Or write me a leter right now:</h2>
+            <form id=form>
+                <label>Your name:
+                <input type="text" id="name">
             </label><br>
-            <label>Email adress:
-                <input type="email" name="client-mail">
+                <label>Email adress:
+                <input type="email" id="mail" required>
             </label><br>
-            <label>Your message:
-                <input type="text" name="message">
+                <label>Your message:
+                <textarea id="message" required></textarea>
             </label><br>
-            <input type="submit" value="Submit"/><br>
-        </form>
-    </nav>
+                <input type="submit"><br>
+            </form>
+            <div id=msg></div>
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+            <script src="js/form.js"></script>
+        </div>
+    </section>
     <footer>
-        <p>© Svitlana Levytska, 2017</p>
+        <p>© Svitlana Levytska 2017 </p>
     </footer>
+
 </body>
 
 </html>
