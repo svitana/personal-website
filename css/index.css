@@ -3,18 +3,19 @@
 
 body {
     margin: auto;
-    max-width: 900px;
+    max-width: 1000px;
     font-family: verdana;
 }
 header {
-    height: 80px;
+    height: 82px;
     background-color: black;
     color: white;
 }
 
 #title {
-    font-size: 230%;
+    font-size: 200%;
     padding: 20px;
+    margin: auto;
 }
 
 section {
@@ -51,7 +52,6 @@ h2 {
 }
 
 #menu {
-    width: 500px;
     float: right;
 }
 
@@ -65,15 +65,21 @@ h2 {
 }
 }
 
-@media (max-width:730px){
+@media (max-width:800px){
+    body {
+    margin: auto;
+    min-width: 320px;
+    font-family: verdana;
+}
   header {
-    height: 122px;
+    height: 100px;
     background-color: black;
     color: white;
 }
   span#title {
     font-size: 230%;
     margin: auto;
+    padding-left: 20px;
     
   }
   #menu {
@@ -83,7 +89,7 @@ h2 {
   .inHead:link, .inhead:visited {
     background-color: #919191;
     color: white;
-    padding: 15px 30px;
+    padding: 15px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -91,6 +97,7 @@ h2 {
   section {
   display: grid;
   text-align: justify;
+  margin: auto;
 }
   h2 {
   text-align: center;
@@ -110,8 +117,7 @@ h2 {
 }
 
 .textInBlocks {
-  background-color: black;
-  color: white;
+
     padding: 10%;
     margin: auto;
 }
