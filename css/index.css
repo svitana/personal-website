@@ -73,16 +73,17 @@ h2 {
 }
   span#title {
     font-size: 230%;
-    padding: 100px;
+    margin: auto;
     
   }
   #menu {
-    width: 500px;
+    max-width: 500px;
+    margin: auto;
 }
   .inHead:link, .inhead:visited {
     background-color: #919191;
     color: white;
-    padding: 30.5px 30px;
+    padding: 15px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -97,8 +98,8 @@ h2 {
   .photo {
     display: block;
     padding: 20px;
-    max-width: 300px;
-    border-radius: 300px;
+    max-width: 320px;
+    border-radius: 320px;
     margin: auto;
 }
   .inHead:hover, .inHead:active {
