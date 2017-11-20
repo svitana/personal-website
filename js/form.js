@@ -7,8 +7,8 @@ function sendForm(e) {
         method: "POST",
         data: {
             name: $('#name').val(),
-            name: $('#mail').val(),
-            name: $('#message').val()
+            email: $('#mail').val(),
+            message: $('#message').val()
         },
         dataType: "json"
     })

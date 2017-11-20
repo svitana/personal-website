@@ -1,9 +1,11 @@
+
+@media (min-width:730px){
+
 body {
     margin: auto;
     max-width: 900px;
     font-family: verdana;
 }
-
 header {
     height: 80px;
     background-color: black;
@@ -32,6 +34,7 @@ h2 {
     padding: 20px;
     max-width: 400px;
     border-radius: 400px;
+    float:right;
 }
 
 .inHead:link, .inhead:visited {
@@ -48,7 +51,7 @@ h2 {
 }
 
 #menu {
-    max-width: 500px;
+    width: 500px;
     float: right;
 }
 
@@ -59,4 +62,56 @@ h2 {
 .textInBlocks {
     padding: 10%;
     margin: auto;
+}
+}
+
+@media (max-width:730px){
+  header {
+    height: 122px;
+    background-color: black;
+    color: white;
+}
+  span#title {
+    font-size: 230%;
+    padding: 100px;
+    
+  }
+  #menu {
+    width: 500px;
+}
+  .inHead:link, .inhead:visited {
+    background-color: #919191;
+    color: white;
+    padding: 30.5px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  section {
+  display: grid;
+  text-align: justify;
+}
+  h2 {
+  text-align: center;
+}
+  .photo {
+    display: block;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 300px;
+    margin: auto;
+}
+  .inHead:hover, .inHead:active {
+    background-color: red;
+}
+  #contact {
+    margin: auto;
+}
+
+.textInBlocks {
+  background-color: black;
+  color: white;
+    padding: 10%;
+    margin: auto;
+}
 }
